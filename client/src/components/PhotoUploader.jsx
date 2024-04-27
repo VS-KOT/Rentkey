@@ -18,7 +18,7 @@ const PhotosUploader = ({photoLink,setPhotoLink,addedPhotos,setAddedPhotos}) => 
       data.append("photos", files[i]);
     }
     axios
-      .post("http://localhost:3000/place/upload", data, {
+      .post("https://rentkey-server.onrender.com/place/upload", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

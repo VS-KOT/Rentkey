@@ -15,7 +15,7 @@ const BookingPage = () => {
     const fetchPropertyDetails = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/place/booking/${placeId}`,
+          `https://rentkey-server.onrender.com/place/booking/${placeId}`,
           {
             method: "POST",
             headers: {

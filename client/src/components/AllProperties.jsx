@@ -12,7 +12,7 @@ const AllProperties = ({ isAuthenticated }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/place/allProperties",
+          "https://rentkey-server.onrender.com/place/allProperties",
           {
             method: "GET",
             headers: {

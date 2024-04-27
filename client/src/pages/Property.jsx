@@ -15,7 +15,7 @@ const Property = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/place/myProperties", {
+      const response = await fetch("https://rentkey-server.onrender.com/place/myProperties", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const Property = () => {
       });
 
       if (result.isConfirmed) {
-        await fetch(`http://localhost:3000/place/delete/${propertyId}`, {
+        await fetch(`https://rentkey-server.onrender.com/place/delete/${propertyId}`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

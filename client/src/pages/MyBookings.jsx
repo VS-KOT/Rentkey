@@ -8,7 +8,7 @@ const BookingCard = ({ booking }) => {
   const token = localStorage.getItem("token");
   const handleCancelBooking = async () => {
     try {
-      const response = await fetch("http://localhost:3000/place/mybooking", {
+      const response = await fetch("https://rentkey-server.onrender.com/place/mybooking", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const MyBookings = () => {
   React.useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/place/mybooking", {
+        const response = await fetch("https://rentkey-server.onrender.com/place/mybooking", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

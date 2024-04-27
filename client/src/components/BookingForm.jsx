@@ -45,7 +45,7 @@ const BookingForm = ({ propertyId, price, bookedDatesDatesFromBackend }) => {
     };
 
     try {
-      const response = await fetch(`http://localhost:3000/place/bookProperty/${propertyId}`, {
+      const response = await fetch(`https://rentkey-server.onrender.com/place/bookProperty/${propertyId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     setResponse("");
     setLoading(true);
 
-    fetch(`http://localhost:3000/forgotpassword/`, {
+    fetch(`https://rentkey-server.onrender.com/forgotpassword/`, {
       method: "POST",
       body: JSON.stringify({email: email}),
       headers: {

@@ -27,7 +27,7 @@ const ResetPassword = () => {
     else{
       try{
         const token = searchParams.get("token");
-        fetch("http://localhost:3000/forgotPassword/reset", {
+        fetch("https://rentkey-server.onrender.com/forgotPassword/reset", {
           method: "POST",
           body: JSON.stringify({password, token}),
           headers: {
