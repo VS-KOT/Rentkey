@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwind.css or your custom CSS file */
+.modal-image-fullscreen {
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+/* tailwind.css or your custom CSS file */
+.modal-image {
+  width: 100vw; /* 100% of viewport width */
+  height: 90vh; /* 60% of viewport height */
+  object-fit: cover;
+}
+
+@layer utilities {
+  .shadow-bookings:hover {
+  box-shadow: 0 0 5px #fbf79b,
+  0 0 25px #fee385,
+  0 0 50px #f2c56a,
+  0 0 100px #d6a556;
+
+}
+.shadow-bookings-form:hover{
+  box-shadow: 0 0 5px #ffffff,
+  0 0 25px #e9ebeb,
+  0 0 50px #ededed,
+  0 0 100px #9d9c9b;  
+}
+}
+
+
+
+  
