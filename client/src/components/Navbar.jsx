@@ -11,7 +11,7 @@ const Navbar = ({}) => {
       <div className="px-4 w-screen flex items-center p-1 justify-between lg:px-8 md:px-4">
         <div className="flex gap-1">
           <Link to="/">
-            <img className="h-[80px] w-31 rounded-lg" src="\src\assets\rentkeylogo.png" alt="main logo" />
+            <img className="h-[80px] w-31 rounded-lg" src="\assets\rentkeylogo.png" alt="main logo" />
           </Link>
 
           {/* <a href="/" className="flex items-center justify-center">
