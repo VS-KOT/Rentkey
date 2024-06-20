@@ -22,7 +22,7 @@ const LandingIntro = () => {
           </div>
           <div class="md:ml-4 mt-9">
             <img
-              src="\src\assets\LandingPhoto.jpg"
+              src="\assets\LandingPhoto.jpg"
               alt=""
               class="w-[640px] rounded-3xl"
             />
